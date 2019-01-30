@@ -9,6 +9,7 @@ vim[0-9]*
 mingw*
 
 # ignore packs from vim-plug
+vimfiles/autoload
 vimfiles/plugged
 
 # ignore ctags-win32
