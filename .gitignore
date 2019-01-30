@@ -1,5 +1,5 @@
 # ignore vim undofile and swap file
-*.un~
+*~
 *.swp
 
 # ignore vim runtime
