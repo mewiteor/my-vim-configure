@@ -227,5 +227,5 @@ if has('clipboard')
 endif
 
 if has('win32')
-    source win32.vim
+    source $VIM/vimfiles/win32.vim
 endif

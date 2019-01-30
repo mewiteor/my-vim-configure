@@ -1,2 +1,15 @@
-# ignore vim undofile
+# ignore vim undofile and swap file
 *.un~
+*.swp
+
+# ignore vim runtime
+vim[0-9]*
+
+# ignore mingw in windows
+mingw*
+
+# ignore packs from vim-plug
+vimfiles/plugged
+
+# ignore ctags-win32
+vimfiles/win32exe/ctags
