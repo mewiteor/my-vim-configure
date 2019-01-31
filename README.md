@@ -8,10 +8,6 @@
 
 下载[universal-ctags](https://github.com/universal-ctags/ctags-win32/releases)到vim/vimfiles/win32exe/ctags目录下
 
-## for Win7 以上系统
-
-## for WinXP
-
 # for linux
 运行*vimfiles/init/bootstrap.sh*
 
