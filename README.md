@@ -1,6 +1,9 @@
 # my-vim-configure
 我的VIM配置
 
+# 编译**You Complete Me**
+方法见[YouCompleteMe_Compile.md](YouCompleteMe_Compile.md)
+
 # for Win32
 运行*vimfiles/init/bootstrap.bat*
 

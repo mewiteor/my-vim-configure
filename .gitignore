@@ -14,3 +14,5 @@ vimfiles/plugged
 
 # ignore ctags-win32
 vimfiles/win32exe/ctags
+
+.tags

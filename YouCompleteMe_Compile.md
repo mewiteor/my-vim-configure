@@ -1,5 +1,15 @@
-# 自己编译**You Complete Me**
-## 依赖环境
+# 编译**You Complete Me**
+## Linux
+### 依赖环境
+- clang
+- [cmake](https://cmake.org/download/)
+- [python](https://www.python.org/)
+- [git](https://git-scm.com/download/win)
+- [vim](https://github.com/vim/vim-win32-installer/releases)
+
+## Windows
+
+### 依赖环境
 - [visual studio](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community)
 - [cmake](https://cmake.org/download/)
 - [python](https://www.python.org/)
@@ -8,7 +18,7 @@
 
 注: vim与python要同为32位或64位
 
-## 准备工作
+### 准备工作
 - 克隆YouCompleteMe:
 ```git
 git clone --recursive https://github.com/Valloric/YouCompleteMe.git
@@ -20,7 +30,7 @@ tar xpf llvm-版本号.src.tar.xz
 tar xpf cfe-版本号.src.tar.xz
 ```
 
-## 编译 libclang
+### 编译 libclang
 从开始启动*... Native Tools Command Prompt for VS ...*
 ```shell
 mkdir libclang构建路径
@@ -29,7 +39,7 @@ cmake libclang源路径\llvm-版本号.src -G "NMake Makefiles" -DBUILD_SHARED_L
 cmake --build . --target libclang
 ```
 
-## 编译 YouCompleteMe
+### 编译 YouCompleteMe
 从开始启动*... Native Tools Command Prompt for VS ...*
 ```shell
 mkdir YouCompleteMe构建路径
