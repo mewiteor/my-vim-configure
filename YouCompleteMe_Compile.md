@@ -3,9 +3,9 @@
 ### 依赖环境
 - clang
 - [cmake](https://cmake.org/download/)
-- [python](https://www.python.org/)
+- [python-dev](https://www.python.org/)
 - [git](https://git-scm.com/download/win)
-- [vim](https://github.com/vim/vim-win32-installer/releases)
+- [vim](https://www.vim.org/download.php)
 
 ## Windows
 
