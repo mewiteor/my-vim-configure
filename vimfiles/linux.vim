@@ -4,7 +4,7 @@
     let s:vim_tags = expand($HOME.'/.cache/tags')
     let g:gutentags_cache_dir = s:vim_tags
 
-    " 检测 $TEMP/.cache/tags 不存在就新建
+    " 检测 $HOME/.cache/tags 不存在就新建
     if !isdirectory(s:vim_tags)
        silent! call mkdir(s:vim_tags, 'p')
     endif

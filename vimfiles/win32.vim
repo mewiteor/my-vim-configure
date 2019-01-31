@@ -17,7 +17,7 @@ endif
 " ludovicchabant/vim-gutentags
     let g:gutentags_ctags_executable= s:ctags_path
 
-    " 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中，避免污染工程目录
+    " 将自动生成的 tags 文件全部放入 $TEMP/.cache/tags 目录中，避免污染工程目录
     let s:vim_tags = expand($TEMP.'/.cache/tags')
     let g:gutentags_cache_dir = s:vim_tags
 
