@@ -15,9 +15,11 @@ fun! download#get(url) "{{{
         endif
     else
         if executable('curl')
-            return system(printf("curl %s", a:url))
+            return system(printf("curl -s '%s'", a:url))
+        elseif executable('wget')
+            return system(printf("curl -q -O - '%s'", a:url))
         else
-            echoerr "can't find curl"
+            echoerr "can't find curl or wget"
             return ""
         endif
     endif

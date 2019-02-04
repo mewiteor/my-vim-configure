@@ -2,6 +2,9 @@
 *~
 *.swp
 
+# ignore tag file l
+.tags
+
 # ignore vim runtime
 vim[0-9]*
 
