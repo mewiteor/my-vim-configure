@@ -18,3 +18,5 @@ fun! translate#youdao(word, from, to) "{{{
         endfor
     endfor
 endfun "}}}
+
+command! -nargs=1 Trans call translate#youdao(expand("<args>"),"AUTO","AUTO")
