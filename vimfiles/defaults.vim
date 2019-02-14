@@ -74,10 +74,8 @@ function! BuildYCM(info)
     " - status: 'installed', 'updated', or 'unchanged'
     " - force:  set on PlugInstall! or PlugUpdate!
     if a:info.status == 'installed' || a:info.force
-        if has('win64')
-            !"\%VIM\%/vimfiles/scripts/ycm_install.bat" x64
-        elseif has('win32')
-            !"\%VIM\%/vimfiles/scripts/ycm_install.bat" x86
+        if has('win32')
+            echo 'install YCM youself please'
         elseif has('unix')
             !./install.py
         else
