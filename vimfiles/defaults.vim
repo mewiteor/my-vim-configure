@@ -46,7 +46,6 @@ Plug 'drmingdrmer/xptemplate'
 Plug 'tomasr/molokai'
     let g:molokai_original = 1
     let g:rehash256 = 1
-    silent! colorscheme molokai
 
 " 高亮缩进
 Plug 'nathanaelkane/vim-indent-guides', { 'on': 'IndentGuidesToggle' }
@@ -182,6 +181,9 @@ Plug 'yianwillis/vimcdoc'
 " Initialize plugin system
 call plug#end()
 
+" 配色
+silent! colorscheme molokai
+
 if !exists("my_auto_commands_loaded")
     let my_auto_commands_loaded=1
     let g:LargeFile=1024*1024*10
@@ -218,4 +220,6 @@ endif
 
 if has('win32')
     source $VIM/vimfiles/win32.vim
+elseif has('unix')
+    source $VIM/vimfiles/linux.vim
 endif
