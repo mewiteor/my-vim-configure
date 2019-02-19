@@ -2,7 +2,7 @@
 *~
 *.swp
 
-# ignore tag file l
+# ignore tag file
 .tags
 
 # ignore vim runtime
@@ -18,4 +18,8 @@ vimfiles/plugged
 # ignore ctags-win32
 vimfiles/win32exe/ctags
 
-.tags
+# ignore in ArchLinux
+vimfiles/archlinux.vim
+vimfiles/ftdetect
+vimfiles/indent
+vimfiles/syntax
