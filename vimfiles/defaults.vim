@@ -20,10 +20,13 @@ set nobackup
 set autochdir
 set statusline=2
 
+" add clang path to environment
+let $PATH.=";D:/Software/Study/llvm/bin"
+
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('$VIM/vimfiles/plugged')
+silent! call plug#begin('$VIM/vimfiles/plugged')
 
 " 代码片段
 Plug 'drmingdrmer/xptemplate'
@@ -139,6 +142,7 @@ Plug 'skywind3000/asyncrun.vim'
 
 " 动态检查
 Plug 'w0rp/ale'
+let g:ale_linters={'cpp': ['clangcheck', 'clangtidy'] }
 
 " 修改比较
 
@@ -180,6 +184,9 @@ Plug 'mhinz/vim-startify'
 
 " 中文文档
 Plug 'yianwillis/vimcdoc'
+
+" Powershell语法高亮
+Plug 'PProvost/vim-ps1'
 
 " Initialize plugin system
 call plug#end()
